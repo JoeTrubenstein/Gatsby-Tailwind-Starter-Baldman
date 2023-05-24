@@ -1,22 +1,21 @@
-import * as React from "react"
+import React from "react"
+import Hero from "../components/Hero"
+import Feature from "../components/Feature"
+import Snippet from "../components/Snippet"
+import Portfolio from "../components/Portfolio"
+import Pricing from "../components/Pricing"
+import Footer from "../components/Footer"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Content from "../components/content"
-
-const IndexPage = () => (
-  <Layout>
+const HomePage = () => {
+  return (
     <div>
-      <Content />
+      <Hero />
+      <Feature />
+      <Snippet />
+      <Portfolio />
+      <Pricing />
+      <Footer />
     </div>
-  </Layout>
-)
-
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Home" />
-
-export default IndexPage
+  )
+}
+export default HomePage;
